@@ -2,9 +2,9 @@
 
 Quickly open source code for the current file or folder in the browser.
 
-<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/1.gif" height=210
+<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/1.gif" height=430
   title="initial setup + opening file in browser">
-<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/2.gif" height=210
+<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/2.gif" height=430
   title="opening folder in browser">
 
 ## Commands
@@ -14,8 +14,8 @@ Quickly open source code for the current file or folder in the browser.
 
 ## Run it from
 
-* command palette (`ctrl`/`cmd` + `shift` + `p` or `View` > `Command Palette...`)
-* context menu (right click in Explorer sidebar or on a file)
+* Command palette (`ctrl`/`cmd` + `shift` + `p` or `View` > `Command Palette...`)
+* Context menu (right click in Explorer sidebar or on a file)
 * `ctrl` + `alt` + `g`
 
 ## Extension settings
