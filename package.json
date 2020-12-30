@@ -1,0 +1,81 @@
+{
+  "name": "open-src-code-in-browser",
+  "displayName": "Open Source Code in Browser",
+  "description": "Quickly open source code for the current file or folder in the browser.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "shortcut",
+    "source code",
+    "browser",
+    "Bitbucket",
+    "GitHub"
+  ],
+  "activationEvents": [
+    "onCommand:openSrcInBrowser.open",
+    "onCommand:openSrcInBrowser.editRootURL"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "keybindings": [{
+      "key": "ctrl+alt+g",
+      "command": "openSrcInBrowser.open"
+    }],
+    "configuration": {
+      "type": "object",
+      "title": "open-src-code-in-browser config",
+      "properties": {
+        "openSrcInBrowser.rootURL": {
+          "type": "string",
+          "default": "",
+          "description": "The root URL of the repository."
+        }
+      }
+    },
+    "commands": [{
+        "command": "openSrcInBrowser.open",
+        "title": "Open source code in browser"
+      },
+      {
+        "command": "openSrcInBrowser.editRootURL",
+        "title": "Edit repo root URL"
+      }
+    ],
+    "menus": {
+      "editor/context": [{
+        "command": "openSrcInBrowser.open",
+        "group": "zz_commands"
+      }],
+      "explorer/context": [{
+        "command": "openSrcInBrowser.open",
+        "group": "zz_commands"
+      }]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.52.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.1.2",
+    "vscode-test": "^1.4.1"
+  }
+}
