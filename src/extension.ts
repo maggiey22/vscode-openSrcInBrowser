@@ -47,7 +47,7 @@ export function activate(context: ExtensionContext) {
 				url += (isFile) ? '/blob/master' : '/tree/master';
 			}
 
-			window.showInformationMessage(`Opening in browser: ${Uri.parse(`${url}${currRelativePath}`)}`);
+			// window.showInformationMessage(`Opening in browser: ${Uri.parse(`${url}${currRelativePath}`)}`);
 			env.openExternal(Uri.parse(`${url}${currRelativePath}`));
 		} else {
 			window.showInformationMessage('Nothing to open.');
