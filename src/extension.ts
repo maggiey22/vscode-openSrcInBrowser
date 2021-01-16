@@ -44,7 +44,7 @@ export function activate(context: ExtensionContext) {
 			if (rootURL.hostname === 'github.com') {
 				// this is actually not necessary since blob redirects to tree when needed and vice versa
 				const isFile = (await fs.promises.lstat(currURI)).isFile();
-				url += (isFile) ? '/blob/master' : '/tree/master';
+				url += (isFile) ? '/blob/main' : '/tree/main';
 			}
 
 			// window.showInformationMessage(`Opening in browser: ${Uri.parse(`${url}${currRelativePath}`)}`);
