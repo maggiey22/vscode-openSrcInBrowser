@@ -3,11 +3,11 @@
 Quickly open source code for the current file or folder in the browser.  
 This is a little something I wished for at work! Whenever I wanted to look at the pretty diff of my code in the browser, I had to right click > copy path > open browser > append path to URL, and I thought it would be so nice to have a keyboard shortcut for that.
 
-<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/1.gif" height=210
+<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/1.gif" height=430
   title="initial setup + opening file in browser">  
-  Initial setup + opening file
-<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/2.gif" height=210
-  title="opening folder in browser">
+    Initial setup + opening file
+<img src="https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/pics/2.gif" height=430
+  title="opening folder in browser">  
   Opening file from sidebar
 
 ## Commands
@@ -17,8 +17,8 @@ This is a little something I wished for at work! Whenever I wanted to look at th
 
 ## Run it from
 
-* command palette (`ctrl`/`cmd` + `shift` + `p` or `View` > `Command Palette...`)
-* context menu (right click in Explorer sidebar or on a file)
+* Command palette (`ctrl`/`cmd` + `shift` + `p` or `View` > `Command Palette...`)
+* Context menu (right click in Explorer sidebar or on a file)
 * `ctrl` + `alt` + `g`
 
 ## Extension settings
