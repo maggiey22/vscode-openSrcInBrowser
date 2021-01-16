@@ -1,5 +1,11 @@
 {
   "name": "open-src-code-in-browser",
+  "publisher": "maggiey22",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maggiey22/vscode-openSrcInBrowser"
+  },
+  "homepage": "https://github.com/maggiey22/vscode-openSrcInBrowser/blob/main/README.md",
   "displayName": "Open Source Code in Browser",
   "description": "Quickly open source code for the current file or folder in the browser.",
   "version": "0.0.1",
